@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exercício 01</title>
+    <title>Exercício 03</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -78,9 +78,11 @@
 
         <div class="offcanvas-body">
             <nav class="nav flex-column">
-                <a class="nav-link active" href="#"><i class="bi bi-house me-2"></i> Exercício 1</a>
-                <a class="nav-link" href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
-                <a class="nav-link" href="#"><i class="bi bi-people me-2"></i> Exercício 3</a>
+                <a class="nav-link " href="/formulario/ex01/exercicio01.html"><i class="bi bi-house me-2"></i> Exercício
+                    1</a>
+                <a class="nav-link " href="exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício
+                    2</a>
+                <a class="nav-link active" href="./exercio03"><i class="bi bi-people me-2"></i> Exercício 3</a>
                 <a class="nav-link" href="#"><i class="bi bi-card-checklist me-2"></i> Exercício 4</a>
                 <a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i> Exercício 5</a>
                 <a class="nav-link" href="#"><i class="bi bi-calendar me-2"></i> Exercício 6</a>
@@ -102,9 +104,10 @@
 
                 <nav class="nav flex-column">
                     <a class="nav-link" href="./../index.html"><i class="bi bi-house me-2"></i> Home</a>
-                    <a class="nav-link active" href="exercicio01.html"><i class="bi bi-house me-2"></i> Exercício 1</a>
-                    <a class="nav-link" href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
-                    <a class="nav-link" href="./../ex03/exercio03.html"><i class="bi bi-people me-2"></i> Exercício 3</a>
+                    <a class="nav-link" href="./../ex01/exercicio01.html"><i class="bi bi-house me-2"></i> Exercício
+                        1</a>
+                    <a class="nav-link " href="./../ex02/exercicio02.html"><i class="bi bi-pencil-square me-2"></i> Exercício 2</a>
+                    <a class="nav-link active" href="exercio03"><i class="bi bi-people me-2"></i> Exercício 3</a>
                     <a class="nav-link" href="#"><i class="bi bi-card-checklist me-2"></i> Exercício 4</a>
                     <a class="nav-link" href="#"><i class="bi bi-bar-chart me-2"></i> Exercício 5</a>
                     <a class="nav-link" href="#"><i class="bi bi-calendar me-2"></i> Exercício 6</a>
@@ -130,51 +133,70 @@
                         <div class="d-flex align-items-center mb-4">
                             <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
                                 style="width: 55px; height: 55px;">
-                                <i class="bi bi-person-plus fs-3"></i>
+                                <i class="bi bi-card-list fs-3"></i>
                             </div>
 
                             <div>
-                                <h1 class="h4 mb-1">Exercicio 01</h1>
+                                <h1 class="h4 mb-1">Exercicio 03</h1>
                                 <p class="text-muted mb-0">Preencha os dados abaixo para realizar o cadastro.</p>
                             </div>
                         </div>
-
-                        <form id="formEx01">
+                        <form id="fromEx02">
 
                             <div class="row">
                                 <div class="col-md-8 mb-3">
-                                    <label for="nome" class="form-label">Nome completo</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Ex: João da Silva">                                  
+                                    <label for="Cliente" class="form-label">Cliente</label>
+                                    <input type="text" class="form-control" id="Cliente" placeholder="Digete seu nome">
                                 </div>
 
-                                <div class="col-md-4 mb-3">
-                                    <label for="cpf" class="form-label">CPF</label>
-                                    <input type="text"  class="form-control" id="cpf" placeholder="123.456.789-00">                                  
+                                <div class="col-md-8 mb-3">
+                                    <label for="Pizza" class="form-label">Pizza</label>
+                                    <input type="text" class="form-control" id="Pizza"
+                                        placeholder="fale o sabor da Pizza">
+
                                 </div>
-                            </div>                          
-
-                            <div class="d-grid gap-2 d-md-flex">
-                                <button type="submit" class="btn btn-primary flex-fill">
-                                    <i class="bi bi-check-circle"></i> Salvar
-                                </button>
-
-                                <button type="reset" class="btn btn-light border flex-fill">
-                                    <i class="bi bi-arrow-clockwise"></i> Limpar
-                                </button>
+                                <div class=" col-md-8 mb-3">
+                                    <label for="Tamanho" class="form-label">Tamanho</label>
+                                    <select class="form-select" id="Tamanho">
+                                        <option selected>Selecione o Tamanho</option>
+                                        <option value="1">Gigante</option>
+                                        <option value="2">Media</option>
+                                        <option value="3">Brotinho</option>
+                                    </select>
+                                </div>
+                                <div class=" col-md-8 mb-3">
+                                    <label for="Bebidas" class="form-label">Bebidas</label>
+                                    <select class="form-select" id="Bebidas">
+                                        <option selected>Selecione as bebidas</option>
+                                        <option value="1">Coca-Cola</option>
+                                        <option value="2">Guarana</option>
+                                        <option value="3 ">Fanta</option>
+                                    </select>
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex">
+                                    <button type="submit" class="btn btn-primary flex-fill">
+                                        <i class="bi bi-check-circle"></i> Concluir
+                                    </button>
+    
+                                    <button type="reset" class="btn btn-light border flex-fill">
+                                        <i class="bi bi-arrow-clockwise"></i> Limpar
+                                    </button>
+                                </div>
+    
                             </div>
-
                         </form>
-
                     </div>
+
                 </div>
-
-            </main>
-
         </div>
+
+        </main>
+
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="exo03.js"></script>
 
 </body>
 
