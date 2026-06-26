@@ -19,6 +19,17 @@ formEx01.addEventListener("submit", function (evento) {
         nome.classList.add("is-valid");
         nome.classList.remove("is-invalid")
     }
+    if(cpf.value.trim() == ""){
+        // invalido 
+        cpf.classList.add("is-invalid")
+        cpf.classList.remove("is-valid")
+    } else {
+        // valido
+        cpf.classList.add("is-valid");
+        cpf.classList.remove("is-invalid")
+    }
 
+    console.log("nome " + nome.value);
+    console.log("cpf " + cpf.value);
 
 });
